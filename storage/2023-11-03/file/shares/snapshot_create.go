@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/go-azure-sdk/sdk/client"
 	"github.com/hashicorp/go-azure-sdk/sdk/odata"
-	"github.com/tombuildsstuff/giovanni/storage/internal/metadata"
+	"github.com/jackofallops/giovanni/storage/internal/metadata"
 )
 
 type CreateSnapshotInput struct {

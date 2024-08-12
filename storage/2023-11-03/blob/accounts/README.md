@@ -16,13 +16,13 @@ import (
 	"fmt"
 	"time"
 	
-	"github.com/tombuildsstuff/giovanni/storage/2023-11-03/blob/accounts"
+	"github.com/jackofallops/giovanni/storage/2023-11-03/blob/accounts"
 )
 
 func Example() error {
 	accountName := "storageaccount1"
     
-    // e.g. https://github.com/tombuildsstuff/giovanni/blob/76f5f686c99ecdcc3fa533a0330d0e1aacb1c327/example/azuread-auth/main.go#L54
+    // e.g. https://github.com/jackofallops/giovanni/blob/76f5f686c99ecdcc3fa533a0330d0e1aacb1c327/example/azuread-auth/main.go#L54
     client, err := buildClient()
     if err != nil {
     	return fmt.Errorf("error building client: %s", err)

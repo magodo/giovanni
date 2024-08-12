@@ -19,7 +19,7 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
-	"github.com/tombuildsstuff/giovanni/storage/2020-08-04/blob/containers"
+	"github.com/jackofallops/giovanni/storage/2020-08-04/blob/containers"
 )
 
 func Example() error {

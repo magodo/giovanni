@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-azure-sdk/resource-manager/storage/2023-01-01/storageaccounts"
-	"github.com/tombuildsstuff/giovanni/storage/internal/testhelpers"
+	"github.com/jackofallops/giovanni/storage/internal/testhelpers"
 )
 
 func TestContainerLifecycle(t *testing.T) {

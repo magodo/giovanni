@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-azure-sdk/sdk/client"
-	"github.com/tombuildsstuff/giovanni/storage/internal/metadata"
+	"github.com/jackofallops/giovanni/storage/internal/metadata"
 )
 
 type GetResponse struct {

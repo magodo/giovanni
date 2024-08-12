@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/go-azure-helpers/lang/pointer"
-	"github.com/tombuildsstuff/giovanni/storage/2020-08-04/blob/accounts"
+	"github.com/jackofallops/giovanni/storage/2020-08-04/blob/accounts"
 )
 
 func TestParsePathIDStandard(t *testing.T) {

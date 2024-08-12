@@ -18,7 +18,7 @@ import (
 	"time"
 	
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
-	"github.com/tombuildsstuff/giovanni/storage/2023-11-03/blob/blobs"
+	"github.com/jackofallops/giovanni/storage/2023-11-03/blob/blobs"
 )
 
 func Example() error {

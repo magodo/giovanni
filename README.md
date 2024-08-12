@@ -50,23 +50,16 @@ Apache 2.0
 
 ## Technical Implementation
 
-This SDK currently makes use of the standard Preparer-Sender-Responder pattern found in [Azure/go-autorest](https://github.com/Azure/go-autorest) - which means that this SDK should be familiar and compatible with [the Azure SDK for Go](https://github.com/Azure/azure-sdk-for-go).
-
-> Note: A future release of this repository will switch to using `hashicorp/go-azure-sdk` as a base layer, rather than `Azure/go-autorest` - [see this issue for more information](https://github.com/tombuildsstuff/giovanni/issues/68).
+This SDK now uses [github.com/hashicorp/go-azure-sdk/sdk](https://github.com/hashicorp/go-azure-sdk) as the authentication and transport layer.
 
 Depending on the API Version / API being used - different authentication mechanisms are possible (see the README within the specific SDK for more info ([example](storage/2020-08-04/blob/accounts/README.md)). In all cases one of the following Authorizers will be required:
 
 * An Authorizer for Azure Active Directory
-* A SharedKeyLite Authorizer (for Blob, Queue and Table Storage)
-* A SharedKeyLite Authorizer (for Table Storage)
+* A SharedKey Authorizer (supports both SharedKey and SharedKeyLite)
 
 Examples for all of these can be found below in [the Examples Directory](examples/).
 
-A [SharedKey and SharedKeyLite Authorizer can be found in `Azure/go-autorest`](https://github.com/Azure/go-autorest/blob/ee71315119d4d7088d74ca9fcbc7301ce2ed2bc1/autorest/authorization_storage.go#L30-L48).
-
 ---
-
-> Note: A future release of this repository will switch to using `hashicorp/go-azure-sdk` as a base layer, rather than `Azure/go-autorest` - [see this issue for more information](https://github.com/tombuildsstuff/giovanni/issues/68).
 
 ## Running the Tests
 

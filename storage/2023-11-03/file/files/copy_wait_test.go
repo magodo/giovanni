@@ -9,8 +9,8 @@ import (
 
 	"github.com/hashicorp/go-azure-sdk/resource-manager/storage/2023-01-01/storageaccounts"
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
-	"github.com/tombuildsstuff/giovanni/storage/2020-08-04/file/shares"
-	"github.com/tombuildsstuff/giovanni/storage/internal/testhelpers"
+	"github.com/jackofallops/giovanni/storage/2020-08-04/file/shares"
+	"github.com/jackofallops/giovanni/storage/internal/testhelpers"
 )
 
 func TestFilesCopyAndWaitFromURL(t *testing.T) {

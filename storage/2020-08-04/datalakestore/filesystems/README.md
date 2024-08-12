@@ -19,7 +19,7 @@ import (
     "github.com/hashicorp/go-azure-helpers/authentication"
     "github.com/hashicorp/go-azure-helpers/sender"
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
-    "github.com/tombuildsstuff/giovanni/storage/2020-08-04/datalakestore/filesystems"
+    "github.com/jackofallops/giovanni/storage/2020-08-04/datalakestore/filesystems"
 )
 
 func Example() error {

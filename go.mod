@@ -1,4 +1,4 @@
-module github.com/tombuildsstuff/giovanni
+module github.com/jackofallops/giovanni
 
 go 1.21
 

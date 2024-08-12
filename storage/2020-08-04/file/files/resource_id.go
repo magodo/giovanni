@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/hashicorp/go-azure-helpers/resourcemanager/resourceids"
-	"github.com/tombuildsstuff/giovanni/storage/2020-08-04/blob/accounts"
+	"github.com/jackofallops/giovanni/storage/2020-08-04/blob/accounts"
 )
 
 // TODO: update this to implement `resourceids.ResourceId` once

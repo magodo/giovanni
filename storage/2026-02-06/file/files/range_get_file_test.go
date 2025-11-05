@@ -9,7 +9,7 @@ import (
 
 	"github.com/hashicorp/go-azure-sdk/resource-manager/storage/2023-01-01/storageaccounts"
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
-	"github.com/jackofallops/giovanni/storage/2020-08-04/file/shares"
+	"github.com/jackofallops/giovanni/storage/2026-02-06/file/shares"
 	"github.com/jackofallops/giovanni/storage/internal/testhelpers"
 )
 

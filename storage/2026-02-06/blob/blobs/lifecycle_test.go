@@ -8,7 +8,7 @@ import (
 
 	"github.com/hashicorp/go-azure-sdk/resource-manager/storage/2023-01-01/storageaccounts"
 	"github.com/hashicorp/go-azure-sdk/sdk/auth"
-	"github.com/jackofallops/giovanni/storage/2020-08-04/blob/containers"
+	"github.com/jackofallops/giovanni/storage/2026-02-06/blob/containers"
 	"github.com/jackofallops/giovanni/storage/internal/testhelpers"
 )
 
@@ -96,10 +96,8 @@ func TestLifecycle(t *testing.T) {
 		t.Fatalf("Error listing blobs: %s", err)
 	}
 
-	if model := listResult.Model; model != nil {
-		if len(model.Blobs.Blobs) != 1 {
-			t.Fatalf("Expected there to be 1 blob in the container but got %d", len(model.Blobs.Blobs))
-		}
+	if blobs := listResult.Blobs; len(blobs.Blobs) != 1 {
+		t.Fatalf("Expected there to be 1 blob in the container but got %d", len(blobs.Blobs))
 	}
 
 	t.Logf("[DEBUG] Setting MetaData..")
